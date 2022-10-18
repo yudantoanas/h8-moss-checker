@@ -1,0 +1,10 @@
+node_modules
+cases
+results
+output
+# tests
+config/config.js*
+config/valid-repositories.js*
+**moss
+# batches
+**debug.json

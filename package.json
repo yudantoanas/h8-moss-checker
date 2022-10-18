@@ -1,0 +1,17 @@
+{
+  "name": "code-checker",
+  "version": "2.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "string-similarity": "^4.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js check repo-name"
+  },
+  "keywords": [],
+  "author": "isro trip",
+  "license": "ISC",
+  "description": "Hacktiv8 cheat detectore tools"
+}
