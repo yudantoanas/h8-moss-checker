@@ -121,7 +121,7 @@ class CheckerController {
       .then(results => this.findSimilarities(results, conf))
       .then(results => this.generateResults(results, conf))
       .then(async results => {
-        if(conf.moss.enabled) {
+        if (conf.moss.enabled) {
           const mossUrl = await MossController.generateMossResults(results, conf)
           // return await MossController.generateMossResults(results, conf).then(({ results }) => MossController.saveResults(results, conf))
           return `Moss says... we should check here:\n${mossUrl}\n\nThe URL is valid for 2 weeks.`
@@ -204,7 +204,7 @@ class CheckerController {
           debug && console.log(firstResult.name, secondResult.name, ratioResult, normalizedRatio)
 
           if (normalizedRatio > defaultRatio) {
-            const relatingStudent = gitMetadata.find(student => student.branch === secondResult.name.split('.js')[0])
+            const relatingStudent = gitMetadata.find(student => student.repository === secondResult.name.split('.js')[0])
 
             debug && console.log({ relatingStudent, result2: secondResult.name.split('.js')[0] })
 
