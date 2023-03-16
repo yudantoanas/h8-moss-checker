@@ -76,7 +76,9 @@ module.exports = [
 ]
 ```
 
-**NOTE**: this file is **mandatory** for checking repos from GitHub Classroom
+**NOTE**: 
+- this file is **mandatory** for checking repos from GitHub Classroom
+- username(s) can be taken from `students` tab, if the data is not same with their real gh username or they haven't clone the repo from classroom then it won't be included in the checking process
 
 ## Usage
 
