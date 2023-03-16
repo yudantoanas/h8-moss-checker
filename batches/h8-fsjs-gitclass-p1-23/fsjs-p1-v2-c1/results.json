@@ -1,0 +1,281 @@
+[
+  {
+    "id": 1,
+    "student": {
+      "repository": "fsjs-p1-v2-c1-anggit382",
+      "author": "angggit382",
+      "commitTimeline": [
+        "Date:   Wed Mar 15 17:38:44 2023 +0700",
+        "Date:   Wed Mar 15 11:41:20 2023 +0700",
+        "Date:   Wed Mar 15 08:56:14 2023 +0700",
+        "Date:   Wed Mar 15 08:52:01 2023 +0700",
+        "Date:   Wed Mar 15 07:34:10 2023 +0700",
+        "Date:   Tue Mar 14 18:03:56 2023 +0700",
+        "Date:   Tue Mar 14 16:46:00 2023 +0700",
+        "Date:   Tue Mar 14 11:25:32 2023 +0700",
+        "Date:   Tue Mar 14 11:03:04 2023 +0700",
+        "Date:   Tue Mar 14 10:59:54 2023 +0700",
+        "Date:   Tue Mar 14 10:52:04 2023 +0700",
+        "Date:   Tue Mar 14 10:46:18 2023 +0700",
+        "Date:   Tue Mar 14 10:42:26 2023 +0700",
+        "Date:   Tue Mar 14 03:30:26 2023 +0000",
+        "Date:   Tue Mar 14 03:30:26 2023 +0000",
+        "Date:   Tue Mar 14 03:30:25 2023 +0000",
+        "Date:   Tue Mar 14 03:30:21 2023 +0000"
+      ]
+    },
+    "studentCases": [
+      {
+        "ratio": 21.63
+      },
+      {
+        "ratio": 3.66
+      },
+      {
+        "ratio": 2.78
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "student": {
+      "repository": "fsjs-p1-v2-c1-bhagaskuro",
+      "author": "bhagaskuro",
+      "commitTimeline": [
+        "Date:   Wed Mar 15 21:20:09 2023 +0700",
+        "Date:   Wed Mar 15 16:15:27 2023 +0700",
+        "Date:   Wed Mar 15 15:42:11 2023 +0700",
+        "Date:   Wed Mar 15 15:39:37 2023 +0700",
+        "Date:   Wed Mar 15 12:42:29 2023 +0700",
+        "Date:   Wed Mar 15 11:22:25 2023 +0700",
+        "Date:   Wed Mar 15 11:18:11 2023 +0700",
+        "Date:   Wed Mar 15 08:59:58 2023 +0700",
+        "Date:   Tue Mar 14 23:12:03 2023 +0700",
+        "Date:   Tue Mar 14 21:05:22 2023 +0700",
+        "Date:   Tue Mar 14 15:31:48 2023 +0700",
+        "Date:   Tue Mar 14 15:23:54 2023 +0700",
+        "Date:   Tue Mar 14 03:14:06 2023 +0000",
+        "Date:   Tue Mar 14 03:14:06 2023 +0000",
+        "Date:   Tue Mar 14 03:14:05 2023 +0000",
+        "Date:   Tue Mar 14 03:14:02 2023 +0000"
+      ]
+    },
+    "studentCases": [
+      {
+        "ratio": 18.92
+      },
+      {
+        "ratio": 3.51
+      },
+      {
+        "ratio": 0.87
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "student": {
+      "repository": "fsjs-p1-v2-c1-danarreza",
+      "author": "danarreza",
+      "commitTimeline": [
+        "Date:   Thu Mar 16 05:29:30 2023 +0700",
+        "Date:   Wed Mar 15 23:06:15 2023 +0700",
+        "Date:   Wed Mar 15 17:40:06 2023 +0700",
+        "Date:   Wed Mar 15 01:48:46 2023 +0700",
+        "Date:   Tue Mar 14 07:28:03 2023 +0000",
+        "Date:   Tue Mar 14 07:28:03 2023 +0000",
+        "Date:   Tue Mar 14 07:28:02 2023 +0000",
+        "Date:   Tue Mar 14 07:28:00 2023 +0000"
+      ]
+    },
+    "studentCases": [
+      {
+        "ratio": 41.02
+      },
+      {
+        "ratio": 1.37
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "student": {
+      "repository": "fsjs-p1-v2-c1-laurenciusw",
+      "author": "william",
+      "commitTimeline": [
+        "Date:   Thu Mar 16 08:47:50 2023 +0700",
+        "Date:   Thu Mar 16 08:46:33 2023 +0700",
+        "Date:   Thu Mar 16 08:09:18 2023 +0700",
+        "Date:   Wed Mar 15 21:22:21 2023 +0700",
+        "Date:   Wed Mar 15 21:09:39 2023 +0700",
+        "Date:   Wed Mar 15 20:30:06 2023 +0700",
+        "Date:   Wed Mar 15 20:23:41 2023 +0700",
+        "Date:   Wed Mar 15 20:12:10 2023 +0700",
+        "Date:   Wed Mar 15 16:29:07 2023 +0700",
+        "Date:   Wed Mar 15 08:00:07 2023 +0700",
+        "Date:   Tue Mar 14 22:00:58 2023 +0700",
+        "Date:   Tue Mar 14 21:25:58 2023 +0700",
+        "Date:   Tue Mar 14 20:17:04 2023 +0700",
+        "Date:   Tue Mar 14 13:02:03 2023 +0000",
+        "Date:   Tue Mar 14 13:02:02 2023 +0000",
+        "Date:   Tue Mar 14 13:02:01 2023 +0000",
+        "Date:   Tue Mar 14 13:01:59 2023 +0000"
+      ]
+    },
+    "studentCases": [
+      {
+        "ratio": 6.88
+      },
+      {
+        "ratio": 5.74
+      },
+      {
+        "ratio": 5.29
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "student": {
+      "repository": "fsjs-p1-v2-c1-pambayungiri",
+      "author": "pambayungiri",
+      "commitTimeline": [
+        "Date:   Thu Mar 16 01:00:13 2023 +0700",
+        "Date:   Wed Mar 15 18:30:55 2023 +0700",
+        "Date:   Wed Mar 15 16:32:39 2023 +0700",
+        "Date:   Wed Mar 15 16:20:28 2023 +0700",
+        "Date:   Wed Mar 15 15:45:37 2023 +0700",
+        "Date:   Wed Mar 15 15:37:49 2023 +0700",
+        "Date:   Wed Mar 15 01:54:37 2023 +0700",
+        "Date:   Tue Mar 14 23:31:43 2023 +0700",
+        "Date:   Tue Mar 14 21:22:27 2023 +0700",
+        "Date:   Tue Mar 14 20:55:39 2023 +0700",
+        "Date:   Tue Mar 14 20:10:45 2023 +0700",
+        "Date:   Tue Mar 14 19:16:18 2023 +0700",
+        "Date:   Tue Mar 14 18:43:59 2023 +0700",
+        "Date:   Tue Mar 14 18:26:12 2023 +0700",
+        "Date:   Tue Mar 14 11:11:03 2023 +0000",
+        "Date:   Tue Mar 14 11:11:03 2023 +0000",
+        "Date:   Tue Mar 14 11:11:02 2023 +0000",
+        "Date:   Tue Mar 14 11:10:59 2023 +0000"
+      ]
+    },
+    "studentCases": [
+      {
+        "ratio": 21.97
+      },
+      {
+        "ratio": 14.46
+      },
+      {
+        "ratio": 7.17
+      },
+      {
+        "ratio": 0.65
+      },
+      {
+        "ratio": 0.61
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "student": {
+      "repository": "fsjs-p1-v2-c1-tfnadr",
+      "author": "Taufan Adri",
+      "commitTimeline": [
+        "Date:   Wed Mar 15 22:20:36 2023 +0700",
+        "Date:   Wed Mar 15 22:17:52 2023 +0700",
+        "Date:   Wed Mar 15 21:41:55 2023 +0700",
+        "Date:   Wed Mar 15 20:43:20 2023 +0700",
+        "Date:   Wed Mar 15 19:37:45 2023 +0700",
+        "Date:   Wed Mar 15 03:08:32 2023 +0700",
+        "Date:   Tue Mar 14 05:34:51 2023 +0000",
+        "Date:   Tue Mar 14 05:34:51 2023 +0000",
+        "Date:   Tue Mar 14 05:34:50 2023 +0000",
+        "Date:   Tue Mar 14 05:34:48 2023 +0000"
+      ]
+    },
+    "studentCases": [
+      {
+        "ratio": 38.98
+      },
+      {
+        "ratio": 32.01
+      },
+      {
+        "ratio": 11.67
+      },
+      {
+        "ratio": 6.7
+      },
+      {
+        "ratio": 5.43
+      },
+      {
+        "ratio": 3.15
+      },
+      {
+        "ratio": 2.83
+      },
+      {
+        "ratio": 1.68
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "student": {
+      "repository": "fsjs-p1-v2-c1-vermaklepis",
+      "author": "vermaklepis",
+      "commitTimeline": [
+        "Date:   Wed Mar 15 23:50:12 2023 +0700",
+        "Date:   Wed Mar 15 23:18:11 2023 +0700",
+        "Date:   Wed Mar 15 23:11:56 2023 +0700",
+        "Date:   Wed Mar 15 22:37:57 2023 +0700",
+        "Date:   Wed Mar 15 22:32:11 2023 +0700",
+        "Date:   Wed Mar 15 22:11:00 2023 +0700",
+        "Date:   Tue Mar 14 18:03:22 2023 +0700",
+        "Date:   Tue Mar 14 17:46:29 2023 +0700",
+        "Date:   Tue Mar 14 15:18:48 2023 +0700",
+        "Date:   Tue Mar 14 11:59:29 2023 +0700",
+        "Date:   Tue Mar 14 11:55:10 2023 +0700",
+        "Date:   Tue Mar 14 11:23:37 2023 +0700",
+        "Date:   Tue Mar 14 10:59:23 2023 +0700",
+        "Date:   Tue Mar 14 03:29:25 2023 +0000",
+        "Date:   Tue Mar 14 03:29:25 2023 +0000",
+        "Date:   Tue Mar 14 03:29:24 2023 +0000",
+        "Date:   Tue Mar 14 03:29:20 2023 +0000"
+      ]
+    },
+    "studentCases": [
+      {
+        "ratio": 44.47
+      },
+      {
+        "ratio": 16.06
+      },
+      {
+        "ratio": 9.77
+      },
+      {
+        "ratio": 9.46
+      },
+      {
+        "ratio": 9.07
+      },
+      {
+        "ratio": 4.39
+      },
+      {
+        "ratio": 4.07
+      },
+      {
+        "ratio": 3.53
+      },
+      {
+        "ratio": 1.63
+      }
+    ]
+  }
+]

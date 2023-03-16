@@ -5,6 +5,7 @@ output
 # tests
 config/config.js*
 config/valid-repositories.js*
+config/usernames.js*
 **moss
 # batches
 **debug.json
