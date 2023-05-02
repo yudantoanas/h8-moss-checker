@@ -62,7 +62,7 @@ class RepositoryController {
             gitMetadata: Promise.all(config.repositories.map(async repository => {
                 try {
                     // do git clone
-                    await gitCloneClassroom(config.path.testPath, repository)
+                    await gitCloneClassroom(config.path.testPath, repository, config.batch_name)
 
                     const testPath = `${config.path.testPath}/${repository}`
                     const outputPath = `${config.path.outputPath}/${repository}`
@@ -94,26 +94,26 @@ class RepositoryController {
 
     static writeMetadata(config) {
         console.log(`Writing git metadata to a file...`)
-    
+
         config.gitMetadata = config.gitMetadata.sort((a, b) => {
-          if (a.repository > b.repository) return 1
-          if (a.repository < b.repository) return -1
-          return 0
+            if (a.repository > b.repository) return 1
+            if (a.repository < b.repository) return -1
+            return 0
         })
-    
+
         config.debug && console.log(config.gitMetadata)
-    
+
         fsSync.writeFileSync(`${config.path.metadataPath}`, JSON.stringify(config.gitMetadata, null, 2))
-    
+
         console.log(`Writing complete.`)
         console.log()
-    
+
         console.log(`Filtering and generating results...`)
         return {
-          config,
-          files: fs.readdir(config.path.testPath)
+            config,
+            files: fs.readdir(config.path.testPath)
         }
-      }
+    }
 }
 
 module.exports = RepositoryController

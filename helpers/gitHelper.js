@@ -16,11 +16,11 @@ const gitClone = (repo, branch, path) => {
 	})
 }
 
-const gitCloneClassroom = (path, repository) => {
+const gitCloneClassroom = (path, repository, batch_name) => {
 	return new Promise((success, fail) => {
 		if (existsSync(`${path}/${repository}`)) execSync(`rm -rf ${path}/${repository}`)
 
-		const execStatement = `git clone --branch main --single-branch git@github.com:h8-fsjs-gitclass-p1-23/${repository} ${path}/${repository}`
+		const execStatement = `git clone --branch main --single-branch git@github.com:${batch_name}/${repository} ${path}/${repository}`
 		exec(execStatement, (e) => {
 			if (e) fail(e)
 			else success()
