@@ -7,5 +7,5 @@ config/config.js*
 config/valid-repositories.js*
 config/usernames.js*
 **moss
-batches/*
+batches/**
 **debug.json
