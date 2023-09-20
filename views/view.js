@@ -26,6 +26,15 @@ class View {
     console.log('\t- [no-moss]\t\tdisables Moss checking')
     console.log('\t- [min-ratio] <0-100>\tfilters normalized ratio')
     console.log('')
+
+    // check classroom
+    console.log('checkClassroom [no-moss]')
+    console.log('\tValidates repository of a set organization (classroom repo),')
+    console.log('\tand checks for similarity from each student repositories.')
+    console.log('\tSubmits 2 files to Moss by default, for second opinion.')
+    console.log('\t- [no-moss]\t\tdisables Moss checking')
+    console.log('\t- [min-ratio] <0-100>\tfilters normalized ratio')
+    console.log('')
   }
 }
 

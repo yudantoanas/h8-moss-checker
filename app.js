@@ -11,21 +11,27 @@ const params = {
 
 console.clear()
 
-params.debug && console.log({...params})
+params.debug && console.log({ ...params })
 
-switch(command) {
+switch (command) {
   case 'setupConfig':
     return CheckerController.migrateConfig()
   case 'check':
     params.filterMinRatio = args.includes('min-ratio') && +args[args.indexOf('min-ratio') + 1]
     params.ignoreMoss = args.includes('no-moss')
-    if(params.repository) return CheckerController.check(params)
+    if (params.repository) return CheckerController.check(params)
     else return console.log('You need to specify the repository name.')
+  case 'checkClassroom':
+    params.filterMinRatio = args.includes('min-ratio') && +args[args.indexOf('min-ratio') + 1]
+    params.ignoreMoss = args.includes('no-moss')
+    
+    const usernames = require('./config/usernames')
+    return CheckerController.checkClassroom(params, usernames)
   case 'resubmitNulls':
     return CheckerController.resubmitNulls()
   case 'filter':
     params.ratioThreshold = args.includes('ratio') && args[args.indexOf('ratio') + 1]
-    if(params.ratioThreshold && !Number.isNaN(params.ratioThreshold))
+    if (params.ratioThreshold && !Number.isNaN(params.ratioThreshold))
       return CheckerController.filterRatioThreshold(params)
     else console.error('You need to set a ratio threshold. Exiting.')
   case 'help':

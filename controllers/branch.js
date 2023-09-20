@@ -8,7 +8,7 @@ const { createDirIfNotExist } = require('../helpers/fileHelper')
 const { sortAscending } = require('../helpers/sortHelper')
 
 class BranchController {
-  static getBranches(name, config){
+  static getBranches(name, config) {
     return new Promise((success, fail) => {
       const BASE_PATH = `batches/${config.batch_name}/${name}`
 
@@ -26,7 +26,7 @@ class BranchController {
 
       console.log(`Checking repository ${config.repo.name} of ${config.batch_name} started`)
       console.log()
-      
+
       const output = execSync(`git ls-remote ${config.gitRepo} "refs/heads/*"`, { encoding: 'utf8' })
 
       let branches = output.split('\n').map(line => line.split('\t')[1]).slice(0, -1).map(ref => ref.split('/').splice(-1)[0])
@@ -58,18 +58,18 @@ class BranchController {
           // show git log from cloned branch
           return (new Promise((success, fail) => {
             exec(`git log`, { cwd: `${branchTestPath}` }, (err, out) => {
-              if(err) throw fail(err)
-              
+              if (err) throw fail(err)
+
               const metadata = {
                 branch,
                 author: out.split('\n').find(line => line.includes('Author:')).split(': ')[1].split(' <')[0],
                 commitTimeline: out.split('\n').filter(line => line.includes('Date:'))
               }
-          
+
               createDirIfNotExist(`${config.path.outputPath}`, true)
 
               fsSync.writeFileSync(`${branchOutputPath}.js`, recursiveCombine(`${branchTestPath}`))
-              
+
               success(metadata)
             })
           }))
@@ -79,13 +79,13 @@ class BranchController {
       }))
     }
   }
-  
+
   static writeMetadata(config) {
     console.log(`Writing git metadata to a file...`)
 
     config.gitMetadata = config.gitMetadata.sort((a, b) => {
-      if(a.branch > b.branch) return 1
-      if(a.branch < b.branch) return -1
+      if (a.branch > b.branch) return 1
+      if (a.branch < b.branch) return -1
       return 0
     })
 
