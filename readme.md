@@ -28,6 +28,7 @@ Rename `config.example.js` to `config.js`, and change its contents as needed:
 ``` js
 module.exports = {
   batch_name: "batch-name", // batch/organization/class name
+  prefix_name: "prefix-name", // repo prefix name, e.g.: fsjs-p1-v2-c1
   base_ratio: 0.8 // minimum base ratio to be filtered, ranging from 0-1. Default: 0.8
 }
 ```
@@ -59,9 +60,25 @@ module.exports = [
 ]
 ```
 
-**NOTE**: One repository must be enclosed in an object.
+**NOTE**:
+* One repository must be enclosed in an object.
+* this is not used when checking for GitHub Classroom
 
 At this time, the object only contains the `name` property. Additional properties will be added in the future.
+
+#### `config/usernames.js`
+
+Add student usernames in an array format. For example:
+
+``` js
+module.exports = [
+    'asep_doradon',
+]
+```
+
+**NOTE**: 
+- this file is **mandatory** for checking repos from GitHub Classroom
+- username(s) can be taken from `students` tab, if the data is not same with their real gh username or they haven't clone the repo from classroom then it won't be included in the checking process
 
 ## Usage
 
@@ -80,13 +97,24 @@ check repo-name <repo> [no-moss]
         - repo-name <repo>      specifies repository name
         - [no-moss]             disables Moss checking
         - [min-ratio] <0-100>   filters normalized ratio
+
+checkClassroom [no-moss]
+        Validates repository of a set organization (classroom repo),
+        and checks for similarity from each student repositories.
+        Submits 2 files to Moss by default, for second opinion.
+        - [no-moss]             disables Moss checking
+        - [min-ratio] <0-100>   filters normalized ratio
 ```
 
 Currently available commands:
 
 * `node app.js check repo-name <repository> [no-moss]`
+  
+  This command requires `repo-name` parameter set, followed by the actual repository name from `valid-repository.js`.
 
-This command requires `repo-name` parameter set, followed by the actual repository name from `valid-repository.js`. The results of this process can be seen at `batches/<org-name>/<repo-name>/results.json` directory.
+* `node app.js checkClassroom [no-moss]`
+
+ The results of these processes can be seen at `batches/<batch-name>/<prefix-name>/results.json` directory.
 
 ## Contribute
 
